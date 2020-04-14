@@ -1,7 +1,7 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
-import CameraIcon from "@material-ui/icons/PhotoCamera";
+import SportsEsports from "@material-ui/icons/SportsEsports";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -12,7 +12,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-// import Link from "@material-ui/core/Link";
 import image from "./assets/img/profile-bg.jpg";
 
 // import Tictactoe from "./GamePage/tictactoe.js";
@@ -58,7 +57,6 @@ const useStyles = makeStyles((theme) => ({
   },
   cardRules: {
     background: "white",
-    // backgroundColor: "#2F2FA2",
     border: "1px solid #2F2FA2",
     borderRadius: 3,
     color: "#2F2FA2",
@@ -79,7 +77,7 @@ export default function App(props) {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <CameraIcon className={classes.icon} />
+          <SportsEsports className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
             Puzzle page
           </Typography>
@@ -150,8 +148,9 @@ export default function App(props) {
                     Sudoku
                   </Typography>
                   <Typography>
-                    This is a media card. You can use this section to describe
-                    the content.
+                    Fill a 9×9 grid with digits so that each column, each row,
+                    and each of the nine 3×3 subgrids that compose the grid
+                    contain all of the digits from 1 to 9
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -166,15 +165,15 @@ export default function App(props) {
                 <CardMedia
                   className={classes.cardMedia}
                   image={require("./assets/img/crossword.jpg")}
-                  title="Image title"
+                  title="Crossword"
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
                     Crossword
                   </Typography>
                   <Typography>
-                    This is a media card. You can use this section to describe
-                    the content.
+                    Fill the white squares with letters, forming words or
+                    phrases, by solving clues, which lead to the answers
                   </Typography>
                 </CardContent>
                 <CardActions>
