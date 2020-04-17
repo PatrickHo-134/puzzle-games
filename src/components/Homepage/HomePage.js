@@ -12,8 +12,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import image from "./assets/img/profile-bg.jpg";
-
+import image from "../../assets/img/profile-bg.jpg";
+import history from "../history/history";
 // import Tictactoe from "./GamePage/tictactoe.js";
 
 const useStyles = makeStyles((theme) => ({
@@ -117,7 +117,7 @@ export default function App(props) {
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
-                  image={require("./assets/img/tictactoe.jpg")}
+                  image={require("../../assets/img/tictactoe.jpg")}
                   title="Tictactoe"
                 />
                 <CardContent className={classes.cardContent}>
@@ -130,7 +130,12 @@ export default function App(props) {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button className={classes.cardPlayButton}>Play</Button>
+                  <Button
+                    className={classes.cardPlayButton}
+                    onClick={() => history.push("/playtictactoe")}
+                  >
+                    Play
+                  </Button>
                   <Button className={classes.cardRules}>Rules</Button>
                 </CardActions>
               </Card>
@@ -140,7 +145,7 @@ export default function App(props) {
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
-                  image={require("./assets/img/sudoku.jpg")}
+                  image={require("../../assets/img/sudoku.jpg")}
                   title="Sudoku"
                 />
                 <CardContent className={classes.cardContent}>
@@ -154,7 +159,12 @@ export default function App(props) {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button className={classes.cardPlayButton}>Play</Button>
+                  <Button
+                    className={classes.cardPlayButton}
+                    onClick={() => history.push("/playsudoku")}
+                  >
+                    Play
+                  </Button>
                   <Button className={classes.cardRules}>Rules</Button>
                 </CardActions>
               </Card>
@@ -164,7 +174,7 @@ export default function App(props) {
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
-                  image={require("./assets/img/crossword.jpg")}
+                  image={require("../../assets/img/crossword.jpg")}
                   title="Crossword"
                 />
                 <CardContent className={classes.cardContent}>
@@ -177,7 +187,12 @@ export default function App(props) {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button className={classes.cardPlayButton}>Play</Button>
+                  <Button
+                    className={classes.cardPlayButton}
+                    onClick={() => history.push("/playcrossword")}
+                  >
+                    Play
+                  </Button>
                   <Button
                     className={classes.cardRules}
                     size="small"

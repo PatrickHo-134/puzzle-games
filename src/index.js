@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./assets/css/index.css";
-import App from "./App";
+import App from "./routes";
+// import App from "./TictactoePage/tictactoePage";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
